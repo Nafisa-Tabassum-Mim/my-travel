@@ -1,6 +1,36 @@
+/* shared styles */
 * {
     font-family: 'Mulish', sans-serif;
 }
+
+section {
+    margin: 5rem 3rem;
+}
+
+.h3-title {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.p-shared {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #FFF;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 8px;
+    background: #FF5400;
+}
+
+/* header part  */
+
+/* banner part  */
 
 .banner {
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13.png");
@@ -10,7 +40,7 @@
     background-position: center;
     border-radius: 16px;
     /* margin: 0 auto; */
-    margin: 3rem auto;
+    margin: 3rem 2rem;
     padding: 100px 160px;
     text-align: center;
 }
@@ -45,14 +75,104 @@ button {
     border-radius: 8px;
     background: #FFF;
     border: none;
-    padding:  16px;
+    padding: 16px;
     width: 180px;
     height: 52px;
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px;
     font-weight: 400;
 }
-.banner button{
-    background-color:  #FF5400;
+
+.banner button {
+    background-color: #FF5400;
     color: #FFF;
+}
+
+/* main part  */
+
+/* section-1 popular-tour */
+
+.popular-tour {
+    display: flex;
+    gap: 100px;
+}
+
+.popular-tour div,
+img {
+    width: 50%;
+}
+
+.popular-tour-info h3 {
+    text-align: left;
+}
+
+.popular-tour-info h3,
+p,
+ul>li {
+    margin-bottom: 30px;
+}
+
+.popular-tour-info button {
+    margin-bottom: 0;
+
+}
+
+/* *** */
+
+/* section-2 */
+
+.picture-info p,
+.card-info p {
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 230px;
+}
+
+.picture-info h3,
+.card-info h3 {
+    margin-bottom: 20px;
+}
+
+.pic-11,
+.pic-12,
+.pic-13 {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* section-3  */
+
+.cards img {
+    height: 60px;
+    width: 60px;
+}
+
+.cards {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.card-with-2{
+    display: flex;
+    gap: 25px;
+}
+.card-with-2 .cards{
+    width: 50%;
+}
+.card3{
+    width: 501px;
+}
+
+.card-with-1{
+    display: flex;
+    justify-content: center;
 }
