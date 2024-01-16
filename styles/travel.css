@@ -162,6 +162,7 @@ ul>li {
     margin-bottom: 20px;
 }
 
+
 .pic-11,
 .pic-12,
 .pic-13 {
@@ -178,7 +179,24 @@ ul>li {
     width: 100%;
 }
 
+/* new section  */
 
+/* .bonus-card{
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    margin: 0 auto;
+    height: 500px;
+}
+.card-pack{
+    background-color:  rgba(255, 255, 255, 0.80);
+    transform: scale(0.4) translateX(470px);
+    padding: 50px;
+    margin-top: 70px;
+} */
 /* section-3  */
 
 .cards img {
@@ -278,7 +296,7 @@ hr {
     text-align: center;
     padding: 10px 0;
     position: relative;
-    right: -325px;
+    right: -360px;
     bottom: 190px;
 }
 
@@ -368,7 +386,7 @@ footer hr {
         font-size: 30px;
     }
 
-    /* section  */
+    /* section 1 */
     section {
         margin: 2rem 1rem;
     }
@@ -412,7 +430,7 @@ footer hr {
     }
 
     .save {
-        left: 185px;
+        left: 190px;
         bottom: 95px;
         height: 50px;
         width: 150px;
