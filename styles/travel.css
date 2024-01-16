@@ -161,18 +161,55 @@ ul>li {
     margin-bottom: 20px;
     padding: 30px;
 }
-.card-with-2{
+
+.card-with-2 {
     display: flex;
     gap: 25px;
 }
-.card-with-2 .cards{
+
+.card-with-2 .cards {
     width: 50%;
 }
-.card3{
+
+.card3 {
     width: 501px;
 }
 
-.card-with-1{
+.card-with-1 {
     display: flex;
     justify-content: center;
+}
+
+/* section 4  */
+
+.subscribe {
+    display: flex;
+    gap: 30px;
+    margin-left: 5rem;
+}
+
+.subscribe img {
+    width: 60%;
+}
+
+.subscribe-info {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 30px;
+}
+
+.subscribe-info input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    color:  rgba(19, 19, 24, 0.30);
+    padding: 16px 20px;
+    width: 90%;
+    margin-bottom: 15px;
+
+}
+
+.subscribe-info button{
+    width: 100%;
+
 }
