@@ -4,7 +4,7 @@
 }
 
 section {
-    margin: 5rem 3rem;
+    margin: 5rem auto;
 }
 
 .h3-title {
@@ -30,6 +30,33 @@ section {
 
 /* header part  */
 
+.icon3 {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0 40px;
+    margin-bottom: 0px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424247;
+}
+
 /* banner part  */
 
 .banner {
@@ -39,9 +66,8 @@ section {
     background-size: cover;
     background-position: center;
     border-radius: 16px;
-    /* margin: 0 auto; */
-    margin: 3rem 2rem;
-    padding: 100px 160px;
+    margin: 0 auto;
+    padding: 100px 260px;
     text-align: center;
 }
 
@@ -64,9 +90,11 @@ section {
 .banner form {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    display: inline-flex;
+    display: flex;
     padding: 16px;
-    gap: 24px;
+    gap: 20px;
+    justify-content: space-evenly;
+
 }
 
 .banner input,
@@ -76,7 +104,7 @@ button {
     background: #FFF;
     border: none;
     padding: 16px;
-    width: 180px;
+    width: 200px;
     height: 52px;
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px;
@@ -95,6 +123,7 @@ button {
 .popular-tour {
     display: flex;
     gap: 100px;
+    padding: 0  30px 0 30px;
 }
 
 .popular-tour div,
@@ -139,10 +168,13 @@ ul>li {
     display: flex;
     gap: 15px;
     margin-top: 15px;
+
 }
 
-.picture img {
-    height: 100%;
+.pic-11>img,
+.pic-12>img,
+.pic-13>img {
+    height: 300px;
     width: 100%;
 }
 
@@ -152,6 +184,21 @@ ul>li {
 .cards img {
     height: 60px;
     width: 60px;
+}
+
+.card1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
 }
 
 .cards {
@@ -184,8 +231,8 @@ ul>li {
 
 .subscribe {
     display: flex;
+    justify-content: center;
     gap: 30px;
-    margin-left: 5rem;
 }
 
 .subscribe-1 img {
@@ -197,7 +244,7 @@ ul>li {
     border-radius: 16px;
     border: 1px solid #FF5400;
     padding: 30px;
-    height: 380px;
+    height: 395px;
 }
 
 
@@ -231,14 +278,16 @@ hr {
     text-align: center;
     padding: 10px 0;
     position: relative;
-    right: -325px ;
+    right: -325px;
     bottom: 190px;
 }
-.save h3{
+
+.save h3 {
     font-size: 32px;
     margin-top: 5px
 }
-.save p{
+
+.save p {
     font-size: 24px;
     margin-bottom: 5px;
 }
@@ -274,4 +323,112 @@ footer {
 footer hr {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.ok {
+    display: none;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width:600px) {
+    .nav-div {
+        display: none;
+    }
+
+    nav {
+        padding: 2px 4px;
+    }
+
+    .icon3{
+        display: block;
+    }
+    
+    .banner form {
+        flex-direction: column;
+        width: 80%;
+        padding: 16px 35px;
+    }
+
+    .banner {
+        margin: 0 auto;
+        padding: 30px 5px;
+    }
+
+    .banner input,
+    select,
+    button {
+        width: 100%;
+    }
+
+    .banner p {
+        padding: 0 20px;
+    }
+
+    .banner h3 {
+        font-size: 30px;
+    }
+
+    /* section  */
+    section {
+        margin: 2rem 1rem;
+    }
+
+    .popular-tour {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .popular-tour div,
+    img {
+        width: 100%;
+    }
+
+    /* section2  */
+    .picture-info p,
+    .card-info p {
+        padding: 0;
+    }
+
+    .pic-11,
+    .pic-12,
+    .pic-13,
+    .card-with-2 {
+        flex-direction: column;
+    }
+
+    .pic-11>img,
+    .pic-12>img,
+    .pic-13>img {
+        height: 176px;
+    }
+
+    .card-with-2 .cards {
+        width: 80%;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    .save {
+        left: 185px;
+        bottom: 95px;
+        height: 50px;
+        width: 150px;
+    }
+
+    .save h3 {
+        font-size: 15px;
+        margin-top: 2px;
+    }
+
+    .save p {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    footer {
+        padding: 10px 20px;
+    }
 }
