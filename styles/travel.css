@@ -123,7 +123,7 @@ button {
 .popular-tour {
     display: flex;
     gap: 100px;
-    padding: 0  30px 0 30px;
+    padding: 0 30px 0 30px;
 }
 
 .popular-tour div,
@@ -181,22 +181,77 @@ ul>li {
 
 /* new section  */
 
-/* .bonus-card{
+.bonus-card-1 {
     background-image: url("../Images/Group\ 39.png");
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 16px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     height: 500px;
 }
-.card-pack{
-    background-color:  rgba(255, 255, 255, 0.80);
-    transform: scale(0.4) translateX(470px);
-    padding: 50px;
-    margin-top: 70px;
-} */
+
+.card-pack-1 {
+    background-color: rgba(255, 255, 255, 0.80);
+    transform: translateX(500px) translateY(60px);
+    height: 350px;
+    width: 590px;
+    border-radius: 16px;
+    padding: 40px 40px 0 40px;
+}
+
+.frame1 img {
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+}
+
+.frame1 {
+    margin-bottom: 10px;
+}
+
+.frame2,
+.frame3 {
+    margin-left: 25px;
+}
+
+/* /////// */
+
+.bonus-card-2 {
+    background-image: url("../Images/Group\ 40.png");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    margin: 0 auto 20px auto;
+    height: 500px;
+}
+
+.card-pack-2 {
+    background-color: rgba(255, 255, 255, 0.80);
+    transform: translateX(60px) translateY(60px);
+    height: 350px;
+    width: 590px;
+    border-radius: 16px;
+    padding: 40px 40px 0 40px;
+}
+
+.bonus-card>h3 {
+    margin-bottom: 10px;
+}
+
+.bonus-card>p {
+    padding: 0 250px 0 250px;
+    text-align: center;
+}
+
+.bonus-card>.button {
+    display: flex;
+    justify-content: center;
+}
+
 /* section-3  */
 
 .cards img {
@@ -357,10 +412,10 @@ footer hr {
         padding: 2px 4px;
     }
 
-    .icon3{
+    .icon3 {
         display: block;
     }
-    
+
     .banner form {
         flex-direction: column;
         width: 80%;
@@ -422,6 +477,36 @@ footer hr {
 
     .card-with-2 .cards {
         width: 80%;
+    }
+
+
+    .bonus-card>.button {
+        display: none;
+    }
+
+    .card-pack-1> button,
+    .card-pack-2 >button {
+        width: 140px;
+        height: 50px;
+        align-items: flex-start;
+        padding: 1px 0;
+    }
+
+    /* section 3 */
+
+    .bonus-card>p {
+        padding: 0 10px;
+    }
+
+    .card-pack-1,
+    .card-pack-2 {
+        height: 400px;
+        width: 190px;
+        transform: translateX(30px) translateY(30px);
+    }
+
+    .p-shared {
+        font-size: 11px;
     }
 
     .subscribe {
